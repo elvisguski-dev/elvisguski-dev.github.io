@@ -17,12 +17,16 @@
 
   <title>Elvis Guski | Desenvolvedor</title>
 
+  <meta name="theme-color" content="#030806">
+
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+
+<canvas id="matrix" aria-hidden="true"></canvas>
 
 
 <header>
@@ -431,6 +435,43 @@
 
 </footer>
 
+
+
+<script>
+/* chuva de código no fundo (desliga sozinha para quem prefere menos movimento) */
+(function () {
+  var c = document.getElementById("matrix");
+  if (!c || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var x = c.getContext("2d"), chars = "01{}<>/;=+*$#ABCDEFabcdef", size = 16, cols, drops;
+
+  function resize() {
+    c.width = innerWidth;
+    c.height = innerHeight;
+    cols = Math.ceil(c.width / size);
+    drops = Array.from({ length: cols }, function () { return Math.random() * -50; });
+  }
+
+  function draw() {
+    x.fillStyle = "rgba(3, 8, 6, 0.08)";
+    x.fillRect(0, 0, c.width, c.height);
+    x.fillStyle = "#00ff88";
+    x.font = size + "px monospace";
+    for (var i = 0; i < cols; i++) {
+      x.fillText(chars[Math.floor(Math.random() * chars.length)], i * size, drops[i] * size);
+      if (drops[i] * size > c.height && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    }
+  }
+
+  resize();
+  addEventListener("resize", resize);
+  var timer = setInterval(draw, 60);
+  document.addEventListener("visibilitychange", function () {
+    clearInterval(timer);
+    if (!document.hidden) timer = setInterval(draw, 60);
+  });
+})();
+</script>
 
 </body>
 
