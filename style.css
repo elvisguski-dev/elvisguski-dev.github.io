@@ -489,6 +489,12 @@ header {
   font-size: 12px;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+}
+
 .project-links a {
   text-decoration: none;
   color: var(--text);
