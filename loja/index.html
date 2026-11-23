@@ -107,7 +107,7 @@ const CONFIG = {
     { id:"orcazap", nome:"OrçaZap", tag:"Orçamentos",
       desc:"Crie orçamentos profissionais e envie pelo WhatsApp, direto do navegador ou instalado como app.",
       itens:["Orçamento em poucos cliques","Envio por WhatsApp","Funciona no celular e no computador"],
-      planos:null, demo:"https://orcazap-seven.vercel.app" }
+      planos:{ mensal:{preco:19.9,link:""}, trimestral:{preco:54.9,link:""}, anual:{preco:199.9,link:""} }, demo:"https://orcazap-seven.vercel.app" }
   ]
 };
 
@@ -153,6 +153,7 @@ CONFIG.produtos.forEach(p => {
     const trial = document.createElement("a"); trial.className = "btn"; trial.target = "_blank"; trial.rel = "noopener";
     trial.href = zapUrl(`Olá Elvis! Quero testar o ${p.nome} por 14 dias.`); trial.textContent = "Testar 14 dias grátis";
     card.append(plans, buy, pay, trial);
+    if (p.demo) { const demo = document.createElement("a"); demo.className = "btn"; demo.href = p.demo; demo.target = "_blank"; demo.rel = "noopener"; demo.textContent = "Ver o app funcionando"; card.append(demo); }
     refresh();
   } else {
     const a = document.createElement("a"); a.className = "btn primary"; a.href = p.demo; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Abrir o OrçaZap";
