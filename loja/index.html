@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elvis Guski | Programas</title>
+<meta name="description" content="PetAgenda, PhotoFesta e OrçaZap: programas prontos para o seu negócio, com licença mensal, trimestral ou anual.">
+<style>
+:root{--bg:#030806;--card:#08140d;--line:#134d2c;--neon:#00ff88;--text:#c9f7d8;--muted:#8cc4a0;--amber:#ffb020;
+--mono:ui-monospace,"JetBrains Mono","Cascadia Code",Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--mono);font-size:15px;line-height:1.6;color:var(--text);
+background:radial-gradient(ellipse at top,rgba(0,255,136,.08),transparent 55%),var(--bg)}
+a{color:var(--neon)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:20px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-weight:700;color:var(--neon);text-decoration:none}
+nav a{margin-left:16px;text-decoration:none;color:var(--text)}
+h1{font-size:clamp(26px,5vw,40px);margin:48px 0 12px;line-height:1.2}
+.lead{color:var(--muted);max-width:640px}
+h2{margin:56px 0 16px;color:var(--neon)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:19px}
+.tag{font-size:12px;color:var(--amber)}
+.card ul{margin-left:18px;color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+.plan{border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;background:transparent;color:var(--text);font:inherit;cursor:pointer}
+.plan[aria-pressed=true]{border-color:var(--neon);background:rgba(0,255,136,.1)}
+.plan b{display:block;font-size:17px}
+.plan small{color:var(--muted);font-size:11px}
+.btn{display:block;text-align:center;padding:12px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid var(--neon);color:var(--neon)}
+.btn.primary{background:var(--neon);color:#03130a}
+.btn[hidden]{display:none}
+.note{font-size:12px;color:var(--muted)}
+.steps{counter-reset:s;list-style:none;display:grid;gap:10px}
+.steps li{counter-increment:s;padding-left:38px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border:1px solid var(--neon);border-radius:50%;text-align:center;line-height:24px;color:var(--neon)}
+details{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:8px;background:var(--card)}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:8px;color:var(--muted)}
+footer{margin-top:64px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/">&gt; elvis_guski</a>
+  <nav><a href="#programas">Programas</a><a href="#como">Como comprar</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Programas prontos para o seu negócio</h1>
+  <p class="lead">Software simples, que roda no seu computador, sem mensalidade escondida. Teste grátis por 14 dias e escolha o plano: mensal, trimestral ou anual.</p>
+
+  <h2 id="programas">Programas</h2>
+  <div class="grid" id="produtos"></div>
+
+  <h2 id="como">Como comprar</h2>
+  <ol class="steps">
+    <li><b>Escolha</b> o programa e o plano acima e clique em comprar.</li>
+    <li><b>Fale comigo no WhatsApp</b> (a mensagem já vai pronta) e combine o pagamento por Pix.</li>
+    <li><b>Receba</b> o link do programa e a sua chave de licença, normalmente em poucas horas, em horário comercial.</li>
+    <li><b>Instale e ative:</b> cole a chave na aba Licença do programa. Eu ajudo se precisar.</li>
+  </ol>
+
+  <h2 id="duvidas">Dúvidas</h2>
+  <details><summary>Preciso de internet para usar?</summary><p>PetAgenda e PhotoFesta rodam no seu computador e guardam seus dados lá. A internet só é necessária para o link público de agendamento ou para os convidados enviarem fotos.</p></details>
+  <details><summary>O que acontece quando a licença vence?</summary><p>Há 3 dias de tolerância. Depois o programa fica só para consulta: você não perde nenhum dado e volta a usar tudo ao renovar.</p></details>
+  <details><summary>Posso testar antes de pagar?</summary><p>Sim. Todo programa começa com 14 dias de teste. Peça o link pelo WhatsApp.</p></details>
+  <details><summary>Como renovo?</summary><p>Chame no WhatsApp. Uma nova chave soma ao tempo que ainda restar.</p></details>
+  <details><summary>Tem suporte?</summary><p>Sim, por WhatsApp e e-mail, para instalar, configurar e tirar dúvidas.</p></details>
+
+  <h2 id="contato">Contato</h2>
+  <div class="card">
+    <p><b>Elvis de Oliveira Guski</b> · Cachoeirinha - RS</p>
+    <a class="btn primary" id="zap" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <p>E-mail: <a id="mail" href="#"></a></p>
+    <p><a href="https://github.com/elvisguski-dev" target="_blank" rel="noopener">GitHub</a> ·
+       <a href="https://www.linkedin.com/in/elvis-guski-3110863a7" target="_blank" rel="noopener">LinkedIn</a> ·
+       <a href="/">Portfólio</a></p>
+  </div>
+</main>
+
+<footer><div class="wrap">© 2026 Elvis de Oliveira Guski. Preços em reais (R$). Licença de uso por período; o programa não é vendido, é licenciado.</div></footer>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÃO: edite só esta parte para mudar preços e contato.
+   Depois de salvar e dar push no GitHub, o Vercel republica sozinho.
+   Os preços abaixo são EXEMPLOS: ajuste para os seus.
+   ========================================================= */
+const CONFIG = {
+  whatsapp: "5551989085153",              // DDI 55 + DDD + número, só dígitos
+  email: "oliveiraguski2008@gmail.com",
+  // Se criar um link de pagamento (Mercado Pago, etc.), cole aqui por produto e plano.
+  // Vazio = o botão "Pagar online" não aparece e a compra é pelo WhatsApp.
+  produtos: [
+    { id:"petagenda", nome:"PetAgenda", tag:"Pet shop e banho e tosa",
+      desc:"Agenda de banho e tosa, cadastro de clientes e pets, tabela de preços editável, financeiro e mensagens por WhatsApp.",
+      itens:["Agendamento online para o cliente","Serviços e tosa completa, horário ajustável","Financeiro e marca do seu pet shop"],
+      planos:{ mensal:{preco:39,link:""}, trimestral:{preco:99,link:""}, anual:{preco:349,link:""} } },
+    { id:"photofesta", nome:"PhotoFesta", tag:"Festas e eventos",
+      desc:"Álbum de fotos da festa por QR Code: os convidados enviam, você modera e exibe em telão.",
+      itens:["QR Code para imprimir","Moderação e telão ao vivo","Baixar tudo em ZIP"],
+      planos:{ mensal:{preco:29,link:""}, trimestral:{preco:75,link:""}, anual:{preco:249,link:""} } },
+    { id:"orcazap", nome:"OrçaZap", tag:"Orçamentos",
+      desc:"Crie orçamentos profissionais e envie pelo WhatsApp, direto do navegador ou instalado como app.",
+      itens:["Orçamento em poucos cliques","Envio por WhatsApp","Funciona no celular e no computador"],
+      planos:null, demo:"https://orcazap-seven.vercel.app" }
+  ]
+};
+
+const brl = n => "R$ " + n.toLocaleString("pt-BR");
+const nomePlano = {mensal:"Mensal", trimestral:"Trimestral", anual:"Anual"};
+const sufixo = {mensal:"/mês", trimestral:"/3 meses", anual:"/ano"};
+const zapUrl = msg => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+
+document.getElementById("zap").href = zapUrl("Olá Elvis! Vim pelo seu site e quero saber mais sobre os programas.");
+const mail = document.getElementById("mail");
+mail.href = "mailto:" + CONFIG.email; mail.textContent = CONFIG.email;
+
+const box = document.getElementById("produtos");
+CONFIG.produtos.forEach(p => {
+  const card = document.createElement("div"); card.className = "card";
+  const h = document.createElement("div");
+  const t = document.createElement("span"); t.className = "tag"; t.textContent = p.tag;
+  const h3 = document.createElement("h3"); h3.textContent = p.nome;
+  h.append(t, h3);
+  const d = document.createElement("p"); d.textContent = p.desc;
+  const ul = document.createElement("ul"); p.itens.forEach(i => { const li = document.createElement("li"); li.textContent = i; ul.append(li); });
+  card.append(h, d, ul);
+
+  if (p.planos) {
+    let atual = "trimestral";
+    const plans = document.createElement("div"); plans.className = "plans";
+    const buy = document.createElement("a"); buy.className = "btn primary"; buy.target = "_blank"; buy.rel = "noopener";
+    const pay = document.createElement("a"); pay.className = "btn"; pay.target = "_blank"; pay.rel = "noopener"; pay.textContent = "Pagar online";
+    const refresh = () => {
+      const pl = p.planos[atual];
+      buy.href = zapUrl(`Olá Elvis! Quero comprar o ${p.nome}, plano ${nomePlano[atual].toLowerCase()} (${brl(pl.preco)}).`);
+      buy.textContent = `Comprar ${nomePlano[atual].toLowerCase()} · ${brl(pl.preco)}`;
+      if (pl.link) { pay.href = pl.link; pay.hidden = false; } else pay.hidden = true;
+      plans.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === atual));
+    };
+    Object.keys(p.planos).forEach(k => {
+      const b = document.createElement("button"); b.className = "plan"; b.dataset.k = k;
+      b.innerHTML = "<small></small><b></b><small></small>";
+      b.children[0].textContent = nomePlano[k]; b.children[1].textContent = brl(p.planos[k].preco); b.children[2].textContent = sufixo[k];
+      b.onclick = () => { atual = k; refresh(); };
+      plans.append(b);
+    });
+    const trial = document.createElement("a"); trial.className = "btn"; trial.target = "_blank"; trial.rel = "noopener";
+    trial.href = zapUrl(`Olá Elvis! Quero testar o ${p.nome} por 14 dias.`); trial.textContent = "Testar 14 dias grátis";
+    card.append(plans, buy, pay, trial);
+    refresh();
+  } else {
+    const a = document.createElement("a"); a.className = "btn primary"; a.href = p.demo; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Abrir o OrçaZap";
+    const b = document.createElement("a"); b.className = "btn"; b.target = "_blank"; b.rel = "noopener";
+    b.href = zapUrl("Olá Elvis! Quero saber sobre planos do OrçaZap."); b.textContent = "Perguntar sobre planos";
+    card.append(a, b);
+  }
+  const n = document.createElement("p"); n.className = "note";
+  n.textContent = p.planos ? "Licença de uso pelo período escolhido. Pagamento por Pix." : "Aplicativo web.";
+  card.append(n);
+  box.append(card);
+});
+</script>
+</body>
+</html>
