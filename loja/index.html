@@ -106,8 +106,8 @@ const CONFIG = {
       planos:{ mensal:{preco:19.9,link:""}, trimestral:{preco:54.9,link:""}, anual:{preco:189.9,link:""} } },
     { id:"orcazap", nome:"OrçaZap", tag:"Orçamentos",
       desc:"Crie orçamentos profissionais e envie pelo WhatsApp, direto do navegador ou instalado como app.",
-      itens:["Orçamento em poucos cliques","Envio por WhatsApp","Funciona no celular e no computador"],
-      planos:{ mensal:{preco:19.9,link:""}, trimestral:{preco:54.9,link:""}, anual:{preco:199.9,link:""} }, demo:"https://orcazap-seven.vercel.app" }
+      itens:["Orçamento em PDF e envio por WhatsApp","Clientes, serviços e painel de aprovação","Plano Profissional: R$ 24,90/mês, assinatura dentro do app"],
+      planos:null, demo:"https://orcazap-seven.vercel.app" }
   ]
 };
 
@@ -162,7 +162,7 @@ CONFIG.produtos.forEach(p => {
     card.append(a, b);
   }
   const n = document.createElement("p"); n.className = "note";
-  n.textContent = p.planos ? "Licença de uso pelo período escolhido. Pagamento por Pix." : "Aplicativo web.";
+  n.textContent = p.planos ? "Licença de uso pelo período escolhido. Pagamento por Pix." : "Aplicativo web: crie sua conta, teste e assine direto no app.";
   card.append(n);
   box.append(card);
 });
