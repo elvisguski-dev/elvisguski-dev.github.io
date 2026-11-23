@@ -88,7 +88,7 @@ footer{margin-top:64px;padding:24px 0;border-top:1px solid var(--line);color:var
 /* =========================================================
    CONFIGURAÇÃO: edite só esta parte para mudar preços e contato.
    Depois de salvar e dar push no GitHub, o Vercel republica sozinho.
-   Os preços abaixo são EXEMPLOS: ajuste para os seus.
+   Preços definidos em 22/11/2026 um pouco abaixo da concorrência pesquisada; ajuste quando quiser.
    ========================================================= */
 const CONFIG = {
   whatsapp: "5551989085153",              // DDI 55 + DDD + número, só dígitos
@@ -99,11 +99,11 @@ const CONFIG = {
     { id:"petagenda", nome:"PetAgenda", tag:"Pet shop e banho e tosa",
       desc:"Agenda de banho e tosa, cadastro de clientes e pets, tabela de preços editável, financeiro e mensagens por WhatsApp.",
       itens:["Agendamento online para o cliente","Serviços e tosa completa, horário ajustável","Financeiro e marca do seu pet shop"],
-      planos:{ mensal:{preco:39,link:""}, trimestral:{preco:99,link:""}, anual:{preco:349,link:""} } },
+      planos:{ mensal:{preco:39.9,link:""}, trimestral:{preco:109.9,link:""}, anual:{preco:399.9,link:""} } },
     { id:"photofesta", nome:"PhotoFesta", tag:"Festas e eventos",
       desc:"Álbum de fotos da festa por QR Code: os convidados enviam, você modera e exibe em telão.",
       itens:["QR Code para imprimir","Moderação e telão ao vivo","Baixar tudo em ZIP"],
-      planos:{ mensal:{preco:29,link:""}, trimestral:{preco:75,link:""}, anual:{preco:249,link:""} } },
+      planos:{ mensal:{preco:19.9,link:""}, trimestral:{preco:54.9,link:""}, anual:{preco:189.9,link:""} } },
     { id:"orcazap", nome:"OrçaZap", tag:"Orçamentos",
       desc:"Crie orçamentos profissionais e envie pelo WhatsApp, direto do navegador ou instalado como app.",
       itens:["Orçamento em poucos cliques","Envio por WhatsApp","Funciona no celular e no computador"],
@@ -111,7 +111,7 @@ const CONFIG = {
   ]
 };
 
-const brl = n => "R$ " + n.toLocaleString("pt-BR");
+const brl = n => "R$ " + n.toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 const nomePlano = {mensal:"Mensal", trimestral:"Trimestral", anual:"Anual"};
 const sufixo = {mensal:"/mês", trimestral:"/3 meses", anual:"/ano"};
 const zapUrl = msg => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
