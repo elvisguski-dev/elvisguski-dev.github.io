@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Elvis Guski | Programas</title>
-<meta name="description" content="PetAgenda, PhotoFesta e OrçaZap: programas prontos para o seu negócio, com licença mensal, trimestral ou anual.">
+<meta name="description" content="PetAgenda, PetAgenda Mobile, PhotoFesta e OrçaZap: programas prontos para o seu negócio, com licença mensal, trimestral ou anual.">
 <style>
 :root{--bg:#030806;--card:#08140d;--line:#134d2c;--neon:#00ff88;--text:#c9f7d8;--muted:#8cc4a0;--amber:#ffb020;
 --mono:ui-monospace,"JetBrains Mono","Cascadia Code",Consolas,monospace}
@@ -65,10 +65,12 @@ footer{margin-top:64px;padding:24px 0;border-top:1px solid var(--line);color:var
   </ol>
 
   <h2 id="duvidas">Dúvidas</h2>
-  <details><summary>Preciso de internet para usar?</summary><p>PetAgenda e PhotoFesta rodam no seu computador e guardam seus dados lá. A internet só é necessária para o link público de agendamento ou para os convidados enviarem fotos.</p></details>
+  <details><summary>Preciso de internet para usar?</summary><p>PetAgenda e PhotoFesta rodam no seu computador e guardam seus dados lá. O PetAgenda Mobile roda no celular, funciona sem internet depois da primeira abertura e guarda os dados no próprio aparelho. A internet só é necessária para o link público de agendamento ou para os convidados enviarem fotos.</p></details>
   <details><summary>O que acontece quando a licença vence?</summary><p>Há 3 dias de tolerância. Depois o programa fica só para consulta: você não perde nenhum dado e volta a usar tudo ao renovar.</p></details>
   <details><summary>Posso testar antes de pagar?</summary><p>Sim. Todo programa começa com 14 dias de teste. Peça o link pelo WhatsApp.</p></details>
   <details><summary>Como renovo?</summary><p>Chame no WhatsApp. Uma nova chave soma ao tempo que ainda restar.</p></details>
+  <details><summary>PetAgenda Mobile e PetAgenda do computador usam os mesmos dados?</summary><p>Não. Cada um guarda os dados no próprio aparelho e eles não sincronizam entre si. O ideal é a recepção usar o computador e a equipe de banho usar o celular, cada um com a sua rotina, ou usar só o Mobile se você trabalha sozinho(a). Faça backup com frequência: no Mobile os dados só existem no celular.</p></details>
+  <details><summary>Qual a diferença de preço entre o PC e o celular?</summary><p>O PetAgenda do computador (R$ 39,90/mês) inclui o link de agendamento online para os seus clientes. O PetAgenda Mobile (R$ 24,90/mês) é a agenda para quem atende pelo celular. Quem quer os dois leva o combo por R$ 54,90/mês.</p></details>
   <details><summary>Tem suporte?</summary><p>Sim, por WhatsApp e e-mail, para instalar, configurar e tirar dúvidas.</p></details>
 
   <h2 id="contato">Contato</h2>
@@ -100,6 +102,14 @@ const CONFIG = {
       desc:"Agenda de banho e tosa, cadastro de clientes e pets, tabela de preços editável, financeiro e mensagens por WhatsApp.",
       itens:["Agendamento online para o cliente","Serviços e tosa completa, horário ajustável","Financeiro e marca do seu pet shop"],
       planos:{ mensal:{preco:39.9,link:""}, trimestral:{preco:109.9,link:""}, anual:{preco:399.9,link:""} } },
+    { id:"petagenda-mobile", nome:"PetAgenda Mobile", tag:"App para celular · novo",
+      desc:"A agenda do pet shop no bolso: instala na tela inicial, funciona sem internet e guarda os dados no próprio celular.",
+      itens:["Agenda, clientes, serviços, financeiro e WhatsApp pronto em 1 toque","Login por pessoa (administrador e atendente)","Backup e restauração dos dados em arquivo"],
+      planos:{ mensal:{preco:24.9,link:""}, trimestral:{preco:64.9,link:""}, anual:{preco:239.9,link:""} } },
+    { id:"petagenda-combo", nome:"PetAgenda PC + Celular", tag:"Combo · economiza até R$ 90 por ano",
+      desc:"PetAgenda no computador (com agendamento online para o cliente) mais o PetAgenda Mobile para a equipe usar no celular. Duas chaves de licença, um preço só.",
+      itens:["Tudo do PetAgenda e do PetAgenda Mobile","Mesmo prazo de licença para os dois","Cada aparelho guarda os próprios dados (não sincronizam entre si)"],
+      planos:{ mensal:{preco:54.9,link:""}, trimestral:{preco:149.9,link:""}, anual:{preco:549.9,link:""} } },
     { id:"photofesta", nome:"PhotoFesta", tag:"Festas e eventos",
       desc:"Álbum de fotos da festa por QR Code: os convidados enviam, você modera e exibe em telão.",
       itens:["QR Code para imprimir","Moderação e telão ao vivo","Baixar tudo em ZIP"],
