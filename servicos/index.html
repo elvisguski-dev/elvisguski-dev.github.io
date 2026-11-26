@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Serviços e orçamento | Elvis Guski</title>
+<meta name="description" content="Dashboards e Power BI, análise de dados, automação de planilhas e software sob demanda. Peça seu orçamento direto pelo WhatsApp.">
+<style>
+:root{--bg:#f6f9fc;--card:#fff;--line:#dbe5ee;--ac:#1d4ed8;--text:#15233b;--muted:#566a82;color-scheme:light}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#ffffffee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+header a{color:var(--muted);text-decoration:none}header a:hover{color:var(--ac)}header b{font-size:18px;color:var(--text)}
+main{max-width:1080px;margin:auto;padding:30px 18px 90px}h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:.2em 0}h1 span{color:var(--ac)}
+h2{font-size:clamp(22px,4vw,30px);margin:0 0 6px}section{padding:42px 0;border-top:1px solid var(--line)}.lead{color:var(--muted);max-width:680px;margin:.4em 0 1em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px}.card h3{font-size:18px}.card ul{margin-left:18px;color:var(--muted);font-size:14.5px}
+.preco{font-size:24px;font-weight:800;color:var(--ac)}.preco small{font-size:13px;font-weight:600;color:var(--muted)}.tag{font-size:12px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.4px}
+.btn{display:inline-block;background:var(--ac);color:#fff;font-weight:700;padding:11px 18px;border-radius:10px;text-decoration:none;text-align:center;border:0;font:inherit;font-weight:700;cursor:pointer}.btn.s{background:#fff;color:var(--ac);border:1px solid var(--ac)}.card .btn{margin-top:auto}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:20px}.ads a{display:block}.ads img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);box-shadow:0 6px 22px rgba(20,40,80,.08)}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:12px;max-width:720px}label{font-size:13px;font-weight:700;color:var(--muted);display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #b9c8d8;border-radius:9px;font:inherit;background:#fff;color:var(--text)}textarea{min-height:130px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.two{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:16px}.steps div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.steps b{color:var(--ac)}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+</style></head><body>
+<header><b>EG<span style="color:var(--ac)">.</span></b><a href="../">Início</a><a href="#dados">Dados e Power BI</a><a href="#sob-demanda">Software sob demanda</a><a href="#orcamento">Orçamento</a><a href="../loja/">Programas prontos</a><a href="../sistemas/">Imagens e vídeos</a></header>
+<main>
+<h1>Transformo seus dados e ideias em <span>resultado</span></h1>
+<p class="lead">Dashboards, análise de dados, planilhas automáticas e softwares feitos sob medida. Você me conta o que precisa e eu devolvo um orçamento claro, pelo WhatsApp.</p>
+<a class="btn" id="zap1" href="#">Pedir orçamento no WhatsApp</a>
+
+<section id="dados"><h2>Análise de dados e Power BI</h2>
+<p class="lead">Para quem tem números espalhados em planilhas e quer enxergar o negócio com clareza. Os preços abaixo são pontos de partida; o valor final depende do tamanho e da complexidade (fontes de dados, quantidade de telas e atualizações).</p>
+<div class="grid">
+<div class="card"><span class="tag">Mais pedido</span><h3>Painel essencial</h3><div class="preco">a partir de R$ 497</div><ul><li>1 fonte de dados (planilha ou arquivo)</li><li>Até 5 indicadores e gráficos</li><li>1 página, com filtros</li><li>Entrega em até 5 dias úteis</li></ul><a class="btn" data-svc="Painel essencial (Power BI)" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Painel profissional</h3><div class="preco">a partir de R$ 1.297</div><ul><li>Até 3 fontes de dados</li><li>Modelagem e medidas (DAX)</li><li>Até 3 páginas navegáveis</li><li>Treinamento de uso incluído</li></ul><a class="btn" data-svc="Painel profissional (Power BI)" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>BI completo</h3><div class="preco">a partir de R$ 2.997</div><ul><li>Várias fontes, banco de dados e APIs</li><li>Atualização automática</li><li>4 ou mais páginas e regras de negócio</li><li>Documentação e treinamento</li></ul><a class="btn" data-svc="BI completo" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Análise de dados + relatório</h3><div class="preco">a partir de R$ 697</div><ul><li>Limpeza e organização dos dados</li><li>Análise e principais descobertas</li><li>Relatório com recomendações</li></ul><a class="btn" data-svc="Análise de dados + relatório" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Automação de planilhas</h3><div class="preco">a partir de R$ 297</div><ul><li>Excel e Google Sheets com fórmulas e macros</li><li>Relatórios prontos em 1 clique</li><li>Validação para evitar erros de digitação</li></ul><a class="btn" data-svc="Automação de planilhas" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Limpeza e tratamento de dados</h3><div class="preco">a partir de R$ 197</div><ul><li>Remove duplicados e padroniza</li><li>Junta várias planilhas em uma base</li><li>Entrega pronta para análise</li></ul><a class="btn" data-svc="Limpeza e tratamento de dados" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Atualização mensal</h3><div class="preco">R$ 297<small> /mês</small></div><ul><li>Atualizo e confiro seus painéis todo mês</li><li>Pequenos ajustes inclusos</li><li>Suporte por WhatsApp</li></ul><a class="btn" data-svc="Atualização mensal de painéis" href="#orcamento">Quero este</a></div>
+<div class="card"><h3>Consultoria avulsa</h3><div class="preco">R$ 90<small> /hora</small></div><ul><li>Tire dúvidas, revise seu painel ou planilha</li><li>Sessão online com compartilhamento de tela</li></ul><a class="btn" data-svc="Consultoria avulsa (hora)" href="#orcamento">Quero este</a></div>
+</div>
+<p class="note">Referência de mercado: profissionais de BI no Brasil costumam cobrar de R$ 50 a mais de R$ 100 por hora, conforme a experiência (fonte: <a href="https://www.hashtagtreinamentos.com/quanto-cobrar-por-projeto-de-power-bi" target="_blank" rel="noopener">Hashtag Treinamentos</a>). Os valores desta página são estimativas iniciais e podem mudar após conversarmos sobre o seu caso.</p>
+<h3 style="margin-top:34px">Propagandas</h3><div class="ads">
+<a href="img/ad-powerbi.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/ad-powerbi.jpg" alt="Anúncio: dashboards e Power BI"></a>
+<a href="img/ad-analise.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/ad-analise.jpg" alt="Anúncio: análise de dados"></a>
+<a href="img/ad-excel.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/ad-excel.jpg" alt="Anúncio: automação de planilhas"></a></div></section>
+
+<section id="sob-demanda"><h2>Software e projetos sob demanda</h2>
+<p class="lead">Crio sites, aplicativos e sistemas de acordo com o que o seu cliente ou o seu negócio precisa. Cada projeto começa com uma conversa e uma descrição do escopo, antes de qualquer cobrança.</p>
+<div class="grid">
+<div class="card"><h3>Site ou página de vendas</h3><div class="preco">a partir de R$ 697</div><ul><li>Visual profissional, rápido e no celular</li><li>Botão direto para o seu WhatsApp</li><li>Publicação no ar inclusa</li></ul><a class="btn" data-svc="Site ou página de vendas" href="#orcamento">Pedir orçamento</a></div>
+<div class="card"><h3>Sistema simples</h3><div class="preco">a partir de R$ 2.500</div><ul><li>Cadastros, controle e relatórios</li><li>Login por pessoa</li><li>Exemplo: agenda, pedidos, estoque</li></ul><a class="btn" data-svc="Sistema simples sob demanda" href="#orcamento">Pedir orçamento</a></div>
+<div class="card"><h3>Sistema sob medida</h3><div class="preco">a partir de R$ 6.000</div><ul><li>Regras do seu negócio, integrações e painéis</li><li>Várias telas e níveis de acesso</li><li>Prazo e entregas combinados por etapas</li></ul><a class="btn" data-svc="Sistema sob medida" href="#orcamento">Pedir orçamento</a></div>
+<div class="card"><h3>Manutenção e suporte</h3><div class="preco">a partir de R$ 149<small> /mês</small></div><ul><li>Correções e pequenos ajustes</li><li>Backup e acompanhamento</li></ul><a class="btn" data-svc="Manutenção e suporte" href="#orcamento">Pedir orçamento</a></div>
+</div>
+<div class="ads"><a href="img/ad-sob-demanda.jpg" target="_blank" rel="noopener"><img loading="lazy" src="img/ad-sob-demanda.jpg" alt="Anúncio: software sob demanda"></a></div>
+<h3 style="margin-top:34px">Como funciona</h3>
+<div class="steps"><div><b>1. Conversa</b><br>Você conta o problema ou a ideia, pelo formulário abaixo ou no WhatsApp.</div><div><b>2. Orçamento</b><br>Eu descrevo o escopo, o prazo e o valor, por escrito.</div><div><b>3. Desenvolvimento</b><br>Entrego por etapas, com você validando cada uma.</div><div><b>4. Entrega e suporte</b><br>Publico, explico como usar e fico à disposição.</div></div>
+<p class="note">Também há <a href="../loja/">programas prontos</a> (PetAgenda, PhotoFesta, OrçaZap) com licença mensal, trimestral ou anual.</p></section>
+
+<section id="orcamento"><h2>Peça seu orçamento</h2>
+<p class="lead">Preencha e clique no botão: abrirá o WhatsApp com a sua mensagem pronta para eu receber.</p>
+<form id="f">
+<div class="two"><div><label for="n">Seu nome</label><input id="n" required autocomplete="name"></div><div><label for="e">Empresa (opcional)</label><input id="e"></div></div>
+<div class="two"><div><label for="s">O que você precisa</label><select id="s"><option>Painel / Power BI</option><option>Análise de dados</option><option>Automação de planilhas</option><option>Limpeza de dados</option><option>Site ou página de vendas</option><option>Sistema / aplicativo sob demanda</option><option>Manutenção / suporte</option><option>Outro</option></select></div>
+<div><label for="p">Prazo desejado</label><select id="p"><option>Sem pressa</option><option>Até 2 semanas</option><option>Até 1 semana</option><option>Urgente</option></select></div></div>
+<div><label for="d">Descreva o projeto</label><textarea id="d" placeholder="Conte o que o seu negócio faz, o que você quer resolver, que dados ou sistemas já usa..." required></textarea></div>
+<div><label for="o">Faixa de investimento (opcional)</label><select id="o"><option value="">Prefiro receber a sugestão</option><option>Até R$ 500</option><option>R$ 500 a R$ 1.500</option><option>R$ 1.500 a R$ 5.000</option><option>Acima de R$ 5.000</option></select></div>
+<button class="btn" type="submit">Enviar pelo WhatsApp</button></form>
+<p class="note">Nenhum dado é guardado neste site: o formulário só monta a mensagem e abre o seu WhatsApp. O orçamento é gratuito e sem compromisso.</p></section>
+</main>
+<script>
+const ZAP="5551989085153", url=m=>"https://wa.me/"+ZAP+"?text="+encodeURIComponent(m);
+document.getElementById("zap1").href=url("Olá Elvis! Vim pelo seu site e quero um orçamento.");
+document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const s=document.getElementById("s"),v=a.dataset.svc,l=v.toLowerCase();
+ const mapa=[["power bi","Painel / Power BI"],["análise","Análise de dados"],["planilha","Automação de planilhas"],["limpeza","Limpeza de dados"],["site","Site ou página de vendas"],["sistema","Sistema / aplicativo sob demanda"],["manutenção","Manutenção / suporte"],["bi completo","Painel / Power BI"],["atualização","Painel / Power BI"]];
+ const m=mapa.find(x=>l.includes(x[0])); if(m) s.value=m[1]; document.getElementById("d").dataset.svc=v;}));
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const g=i=>document.getElementById(i).value.trim(),d=document.getElementById("d");
+ const linhas=["Olá Elvis! Quero um orçamento.","","Nome: "+g("n")];if(g("e"))linhas.push("Empresa: "+g("e"));linhas.push("Preciso de: "+g("s"));if(d.dataset.svc)linhas.push("Pacote de interesse: "+d.dataset.svc);linhas.push("Prazo: "+g("p"));if(g("o"))linhas.push("Investimento: "+g("o"));linhas.push("","Projeto: "+g("d"));
+ window.open(url(linhas.join("\n")),"_blank","noopener");});
+</script></body></html>
