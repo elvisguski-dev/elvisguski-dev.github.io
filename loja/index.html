@@ -95,7 +95,7 @@ footer{margin-top:64px;padding:24px 0;border-top:1px solid var(--line);color:var
 const CONFIG = {
   whatsapp: "5551989085153",              // DDI 55 + DDD + número, só dígitos
   email: "oliveiraguski2008@gmail.com",
-  // Se criar um link de pagamento (Mercado Pago, etc.), cole aqui por produto e plano.
+  // Se criar um link de pagamento, cole aqui por produto e plano.
   // Vazio = o botão "Pagar online" não aparece e a compra é pelo WhatsApp.
   produtos: [
     { id:"petagenda", nome:"PetAgenda", tag:"Pet shop e banho e tosa",
@@ -116,8 +116,8 @@ const CONFIG = {
       planos:{ mensal:{preco:19.9,link:""}, trimestral:{preco:54.9,link:""}, anual:{preco:189.9,link:""} } },
     { id:"orcazap", nome:"OrçaZap", tag:"Orçamentos",
       desc:"Crie orçamentos profissionais e envie pelo WhatsApp, direto do navegador ou instalado como app.",
-      itens:["Orçamento em PDF e envio por WhatsApp","Clientes, serviços e painel de aprovação","Plano Profissional: R$ 24,90/mês, assinatura dentro do app"],
-      planos:null, demo:"https://orcazap-seven.vercel.app" }
+      itens:["Orçamento em PDF e envio por WhatsApp","Clientes, serviços e painel de aprovação","Licença liberada na sua conta depois da compra, igual aos outros programas"],
+      planos:{ mensal:{preco:24.9,link:""}, trimestral:{preco:64.9,link:""}, anual:{preco:239.9,link:""} }, demo:"https://orcazap-seven.vercel.app" }
   ]
 };
 
